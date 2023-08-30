@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* for smooth scrolling within the page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2.7rem;
+}
+
+.wave {
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.font {
+  font-family: "Limelight", cursive;
+}
+
+.heading {
+  margin-block: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.container {
+  width: 90vw;
+  margin-inline: auto;
+  margin-block: 2rem;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+}
+
+.red {
+  color: red;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.black {
+  color: black;
+}
+
+.light {
+  color: #0b0b0b;
+}
+
+.flex {
+  flex-direction: column;
+  display: flex;
+}
+
+.btn {
+  background-color: black;
+  color: red;
+  border: 2px double red;
+  border-radius: 20px;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+}
+
+.btn:hover {
+  border: 2px double black;
+  background-color: red;
+  color: black;
+}
+
+.btn-reverse {
+  font-weight: 700;
+  border: 2px double black;
+  background-color: red;
+  color: black;
+  border-radius: 20px;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+}
+
+.btn-reverse:hover {
+  background-color: black;
+  color: red;
+  border: 2px double red;
+}
+
+.up-arrow {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  background-color: black;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+}
+.up-arrow i {
+  color: red;
+}
+
+.navbar-section {
+  /* for mobile navbar */
+}
+.navbar-section .navbar-container {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 0;
+  width: 95vw;
+}
+.navbar-section .logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 2rem;
+  gap: 1rem;
+}
+.navbar-section .nav-links {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  font-size: 1.4rem;
+}
+.navbar-section .nav-links a {
+  color: black;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+}
+.navbar-section .nav-links a:hover {
+  color: red;
+}
+.navbar-section .list-item {
+  text-decoration-line: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.navbar-section .hamburg-icon, .navbar-section .close-icon {
+  display: none;
+}
+
+.home-section {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("images/mount-fuji.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-section .home-container {
+  margin-block-start: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  height: 100%;
+}
+
+.about-section .about-container {
+  background-image: linear-gradient(rgba(18, 15, 15, 0.269), rgba(25, 23, 23, 0.238)), url("images/sakura-bg.jpg");
+  border-radius: 20px;
+  color: white;
+  padding-inline: 4rem;
+  margin-block-start: 5rem;
+  padding-block-end: 3rem;
+}
+.about-section .about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: center;
+}
+.about-section .about-content p {
+  font-size: 1.1rem;
+}
+
+.things-section .things-content {
+  margin-block-start: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-around;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  row-gap: 3rem;
+  padding-inline: 3rem;
+}
+.things-section .thing {
+  gap: 1rem;
+}
+.things-section .thing h2 {
+  align-self: center;
+}
+.things-section .thing img {
+  align-self: center;
+  width: 20vw;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.things-section .thing img:hover {
+  filter: brightness(60%);
+}
+
+.cuisine-section .cuisine {
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: 3rem;
+  gap: 6rem;
+  padding-inline: 5rem;
+}
+.cuisine-section .cuisine img {
+  width: 20vw;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
+}
+.cuisine-section .cuisine-content {
+  gap: 1rem;
+  padding: 3rem;
+}
+.cuisine-section .cuisine2, .cuisine-section .cuisine4 {
+  flex-direction: row-reverse;
+}
+
+.city-section .city-content {
+  display: flex;
+  justify-content: space-around;
+}
+.city-section .city {
+  gap: 1rem;
+}
+.city-section .city img {
+  width: 25vw;
+  aspect-ratio: 3/4;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.city-section .city img:hover {
+  filter: brightness(60%);
+}
+
+.contact-section {
+  margin-block-start: 3rem;
+  background-color: black;
+  color: white;
+}
+.contact-section .contact-text {
+  text-align: center;
+  padding-block-end: 4rem;
+}
+
+.footer-section {
+  margin-block-start: 4rem;
+  background-color: red;
+  font-size: 1rem;
+  padding-block: 1rem;
+  text-align: center;
+}/*# sourceMappingURL=landing_page.css.map */

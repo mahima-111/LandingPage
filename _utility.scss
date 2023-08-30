@@ -1,0 +1,76 @@
+// utility classes
+.wave{
+    overflow: hidden;
+    object-fit: cover;
+}
+.font{
+    font-family: 'Limelight', cursive;    
+}
+.heading{
+    margin-block: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+.container{
+    width: 90vw;
+    margin-inline: auto;
+    margin-block: 2rem;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+}
+.red{
+    color: red;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.black{
+    color: black;
+}
+.light{
+    color: $light-text;
+}
+.flex{
+    flex-direction: column;
+    display: flex;
+}
+.btn{
+    background-color: $accent-color;
+    color: $sec-accent-color;
+    border: 2px double red;
+    
+    border-radius: 20px;
+    padding-inline: 2rem;
+    padding-block: 0.5rem;
+}
+.btn:hover{
+    border: 2px double black;
+    background-color: red;
+    color: black;
+}
+.btn-reverse{
+    font-weight: 700;
+    border: 2px double black;
+    background-color: red;
+    color: black;
+    border-radius: 20px;
+    padding-inline: 2rem;
+    padding-block: 0.5rem;
+}
+.btn-reverse:hover{
+    background-color: $accent-color;
+    color: $sec-accent-color;
+    border: 2px double red;
+}
+.up-arrow{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background-color: $accent-color;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    i{
+        color: $sec-accent-color;
+    }
+}
